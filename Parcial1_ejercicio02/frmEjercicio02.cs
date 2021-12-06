@@ -38,5 +38,10 @@ namespace Parcial1_ejercicio02
                 this.lstPalabras.Items.Add(palabras[i] + " --> " + palabras[i].Length + " caracteres...");
             }
         }
+
+        private void btnSaludo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Saludos...");
+        }
     }
 }

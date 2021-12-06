@@ -33,6 +33,7 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.lstPalabras = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSaludo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,11 +90,25 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Resultado:";
             // 
+            // btnSaludo
+            // 
+            this.btnSaludo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSaludo.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaludo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSaludo.Location = new System.Drawing.Point(563, 161);
+            this.btnSaludo.Name = "btnSaludo";
+            this.btnSaludo.Size = new System.Drawing.Size(109, 41);
+            this.btnSaludo.TabIndex = 5;
+            this.btnSaludo.Text = "Saludo";
+            this.btnSaludo.UseVisualStyleBackColor = false;
+            this.btnSaludo.Click += new System.EventHandler(this.btnSaludo_Click);
+            // 
             // frmEjercicio02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSaludo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstPalabras);
             this.Controls.Add(this.btnAceptar);
@@ -113,6 +128,7 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.ListBox lstPalabras;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSaludo;
     }
 }
 
